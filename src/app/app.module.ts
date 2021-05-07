@@ -7,14 +7,17 @@ import { AppComponent } from './app.component';
 import { AutoComponent } from './auto/auto.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import {MatIconModule} from '@angular/material/icon';
+
+import {PadreComponent} from './comunicacion-componentes/componente-padre/padre.component';
+import {HijoComponent} from './comunicacion-componentes/componente-hijo/hijo.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutoComponent
+    AutoComponent, PadreComponent, HijoComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,

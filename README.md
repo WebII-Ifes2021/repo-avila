@@ -1,4 +1,4 @@
-# Formulario
+# Falta solo el Data Picker que no me anduvo mientras lo intentaba hacer 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 

@@ -1,4 +1,54 @@
-<h1>Hola Soy el Padre</h1>
 
-<button (click)="setHijo()">Set Hijo</button>
+<h1>_____________________________________</h1>
+<form [formGroup]="padreForm" name="padreForm">
+    <div>
+        
+        <h3>Nombre: </h3>
+        <input type="text" formControlName="nombre">
+        <h3>Apellido: </h3>
+        <input type="text" formControlName="apellido">
+        <h3>Edad: </h3>
+        <input type="text" formControlName="edad">
+
+        <!--
+            <h3>Fecha de Nacimiento: </h3>
+        <mat-form-field>
+            <mat-label>Elija una Fecha</mat-label>
+            <input matInput [matDatepicker]="myDatePicker">
+            <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker></mat-datepicker>
+        </mat-form-field>
+
+        -->
+    </div>
+    
+
+</form>
+
+<!--
+<mat-form-field appearance="fill">
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+
+
+
+-->
+
+
+<button (click)="setHijo()">VARON</button>
+<button (click)="setHija()">MUJER</button>
 <app-hijo [hijo]="padre"></app-hijo>
+
+<mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1">Mayor de Edad</mat-radio-button>
+    <h1></h1>
+    <div><mat-radio-button value="2">Menor de Edad</mat-radio-button></div>
+</mat-radio-group>
+<h1></h1>
+<button (click)="guardar">Guardar</button>

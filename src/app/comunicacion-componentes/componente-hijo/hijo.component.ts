@@ -6,5 +6,5 @@ import {Component, Input} from '@angular/core';
 })
 export class HijoComponent{
     @Input()
-    hijo = "Hola soy hijo";
+    hijo = "Buenas, estoy probando la llamada al hijo varón";
 }

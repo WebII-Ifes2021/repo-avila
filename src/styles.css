@@ -1,4 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #11446b ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+  }
+
+
+
+/* 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto,
+     "Helvetica Neue", sans-serif; }
+ */

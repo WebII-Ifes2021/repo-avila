@@ -1,0 +1,45 @@
+
+<form [formGroup]="jefeForm" name="jefeForm">
+
+    <div>
+        <label>nombre *</label>
+    </div>
+
+    <input type="text" placeholder="ingrese Nombre...." formControlName="nombre"><br>
+
+    <h2></h2>
+
+    <div>
+        <label>apellido *</label>
+    </div>
+
+    <input type="text" placeholder="ingrese Apellido...." formControlName="apellido"><br>
+    
+    <h2></h2>
+
+    <div>
+        <label>edad *</label>
+    </div>
+
+    <input type="number" placeholder="ingrese Edad...." formControlName="edad"><br>
+
+    <h2></h2>
+
+</form>
+
+<button mat-button (click)="setComponenteEmpleado()" color="primary">Guardar</button>
+
+<app-empleado [componenteEmpleado]='componenteJefe'></app-empleado>
+
+<!--
+<app-empleado [dataDeJefe]='jefeForm' (btnEvent) = "onRecibejefe(event)"></app-empleado>
+
+-->
+
+
+
+
+<!--<app-empleado [componenteEmpleado]='componenteJefe'></app-empleado>
+-->
+<!--<app-b [datadeA]='nombre'></app-b>
+-->

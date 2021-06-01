@@ -1,8 +1,28 @@
 <h1>Formulario Component</h1>
 
-<app-auto> </app-auto>
+<!--<app-auto> </app-auto>
+<app-hijo></app-hijo>
+<app-padre></app-padre>
 
 <router-outlet></router-outlet>
+-->
+
+<h1></h1>
+<div>
+<mat-form-field appearance="fill">
+  <mat-label color="#008000">Selecciona una fecha</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+<h1>--------------------</h1>
+<h1>--------------------</h1>
+<h1></h1>
+<h1> Tp 5</h1>
+<h3>__________Datos del Jefee_________________</h3>
+<app-jefe></app-jefe>
+
 
 
 
@@ -10,7 +30,19 @@
 <!--
 <div>
  <p> 
-  
+
+
+  <h1></h1>
+<div>
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+
+
 <mat-form-field appearance="outline">
   <mat-label>ingrese Nombre y Apellido</mat-label>
   <input matInput placeholder="marca">
